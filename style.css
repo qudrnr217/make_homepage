@@ -9,22 +9,23 @@
 }
 
 .intro_bg{ /* 백그라운드 배경 설정은 css에서 여기서해줌*/
-    background-image:url("image/flash.png") ;
+    background-image:url("image/smart_ht.png") ;
     width:100%;
-    height:718px ;
+    height:718px;
 }
+
 .header{
     display: flex;
-    width:1280;
-    margin: auto;
-    background: red;
+    width:1280px;
+    margin:auto;
     height: 86px;
 }
+
 
 .searchArea{
     width:300px;
     height: 40px;
-    background: green;
+    background: rgba(0,0,0,0.5);
     border-radius: 5px; /*둥글기*/
     margin-top:24px;
 }
@@ -32,10 +33,10 @@
 .searchArea > form > input{
     border:none; 
     width:250px;
-    height: 40px;
-    background:rgba(0,0,0,0,0);
+    height:40px;
+    background:rgba(0,0,0,0.0);
     color:white; /*글자색 화이트*/
-    padding-left:10px;
+    padding-left:10px; /*입력 할 수 있는 곳의 왼쪽을 10px만큼 띄워줌*/
 }
 
 .searchArea > form > span{
@@ -49,12 +50,14 @@
 .navi{
     display: flex; /* display: flex는 세로로 된것을 가로로 만들어줌*/
     justify-content: flex-end; /*오른쪽 끝엥 붙여줌 네비들을*/
-    width:calc(1280px-300px);
+    width:calc(1280px - 300px); /*연산자 양옆에 띄워쓰기해줘야 실행됨.*/
     line-height: 86px;
-    background: blue;
+   
 }
 
 .navi > li{ /* li의 원소 하나 하나 적용*/
     margin-left:84px;
 }
-
+.navi > li > a{
+    color:black;
+}
