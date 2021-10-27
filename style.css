@@ -1,0 +1,60 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none; /* 목록에 점 없애는 기능 */
+    text-decoration: none; /* 네이버 바로가기 할때 색깔 밑줄 없애줌 */
+    border-collapse: collapse;/*테이블에 따로떨어져있는 선을 붙여줌 */
+    margin: 0px;
+    padding: 0px;
+    color:black;
+}
+
+.intro_bg{ /* 백그라운드 배경 설정은 css에서 여기서해줌*/
+    background-image:url("image/flash.png") ;
+    width:100%;
+    height:718px ;
+}
+.header{
+    display: flex;
+    width:1280;
+    margin: auto;
+    background: red;
+    height: 86px;
+}
+
+.searchArea{
+    width:300px;
+    height: 40px;
+    background: green;
+    border-radius: 5px; /*둥글기*/
+    margin-top:24px;
+}
+
+.searchArea > form > input{
+    border:none; 
+    width:250px;
+    height: 40px;
+    background:rgba(0,0,0,0,0);
+    color:white; /*글자색 화이트*/
+    padding-left:10px;
+}
+
+.searchArea > form > span{
+    width:50px;
+    color:#fff;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+
+.navi{
+    display: flex; /* display: flex는 세로로 된것을 가로로 만들어줌*/
+    justify-content: flex-end; /*오른쪽 끝엥 붙여줌 네비들을*/
+    width:calc(1280px-300px);
+    line-height: 86px;
+    background: blue;
+}
+
+.navi > li{ /* li의 원소 하나 하나 적용*/
+    margin-left:84px;
+}
+
